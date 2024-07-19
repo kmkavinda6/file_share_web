@@ -15,15 +15,18 @@ This project sets up a simple file-sharing web server that allows users to downl
 
 Ensure your project directory is structured as follows:
 
-/path/to/your/project
+
+```your/project
 ├── data
-│ ├── file1.txt
-│ ├── file2.exe
-│ └── ...
+│   ├── file1.txt
+│   ├── file2.exe2.exe
+│   └── ...
 ├── index.html
 ├── script.js
 ├── style.css
 ├── server.py
+└── logo.png
+```
 └── logo.png
 
 
@@ -71,20 +74,17 @@ Ensure your project directory is structured as follows:
 
 
 
-This command starts an HTTP server on port 80. Ensure no other services are using port 80 on your machine.
+To start the HTTP server on port 80, ensure that no other services are using port 80 on your machine.
 
+To access the web page, open a web browser and go to the following URL:
 
-Access the Web Page:
+`http://<Your-Local-IP-Address>`
 
-Open a web browser and go to the following URL:
+Replace `<Your-Local-IP-Address>` with your actual local IP address. You can find your local IP address using commands like `ipconfig` (Windows) or `ifconfig` (Linux/Mac).
 
-http://<Your-Local-IP-Address>
+**Usage:**
+- View Files: The web page will display a list of files available for download.
+- Download Files: Click on a file link to download it. The file will be prompted for download rather than displayed in the browser.
 
-
-Replace <Your-Local-IP-Address> with your actual local IP address. You can find your local IP address using commands like ipconfig (Windows) or ifconfig (Linux/Mac).
-
-Usage
-View Files: The web page will display a list of files available for download.
-Download Files: Click on a file link to download it. The file will be prompted for download rather than displayed in the browser.
-Troubleshooting
-Files Not Showing: Ensure the data directory contains files and that the server.py script is running correctly.
+**Troubleshooting:**
+- Files Not Showing: Ensure the `data` directory contains files and that the `server.py` script is running correctly.
