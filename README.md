@@ -15,7 +15,6 @@ This project sets up a simple file-sharing web server that allows users to downl
 
 Ensure your project directory is structured as follows:
 
-
 ```your/project
 ├── data
 │   ├── file1.txt
@@ -24,11 +23,9 @@ Ensure your project directory is structured as follows:
 ├── index.html
 ├── script.js
 ├── style.css
-├── server.py
+├── File_server.py
 └── logo.png
 ```
-└── logo.png
-
 
 - **`data/`**: Directory containing the files to be shared.
 - **`index.html`**: Main HTML file for the web interface.
@@ -47,7 +44,7 @@ Ensure your project directory is structured as follows:
    python File_server.py
    ```
 
-   or 
+   or
 
    ```bash
    python -m http.server 80
@@ -57,25 +54,6 @@ Ensure your project directory is structured as follows:
 
 2. **Access the Web Page**:
 
-   Open a web browser and go to the following URL:
-
-   `http://<Your-Local-IP-Address>`
-
-   Replace `<Your-Local-IP-Address>` with your actual local IP address. You can find your local IP address using commands like `ipconfig` (Windows) or `ifconfig` (Linux/Mac).
-
-```sh
-   python File_server.py
-   ```
-   or 
-
-   ```sh
-   python -m http.server 80
-   ```
-
-
-
-To start the HTTP server on port 80, ensure that no other services are using port 80 on your machine.
-
 To access the web page, open a web browser and go to the following URL:
 
 `http://<Your-Local-IP-Address>`
@@ -83,8 +61,11 @@ To access the web page, open a web browser and go to the following URL:
 Replace `<Your-Local-IP-Address>` with your actual local IP address. You can find your local IP address using commands like `ipconfig` (Windows) or `ifconfig` (Linux/Mac).
 
 **Usage:**
+
 - View Files: The web page will display a list of files available for download.
 - Download Files: Click on a file link to download it. The file will be prompted for download rather than displayed in the browser.
 
 **Troubleshooting:**
+
 - Files Not Showing: Ensure the `data` directory contains files and that the `server.py` script is running correctly.
+- To start the HTTP server on port 80, ensure that no other services are using port 80 on your machine.
