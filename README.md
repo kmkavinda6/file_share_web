@@ -60,12 +60,12 @@ Ensure your project directory is structured as follows:
 
     Replace `<Your-Local-IP-Address>` with your actual local IP address. You can find your local IP address using commands like `ipconfig` (Windows) or `ifconfig` (Linux/Mac).
 
-**Usage:**
 
-    - View Files: The web page will display a list of files available for download.
-    - Download Files: Click on a file link to download it. The file will be prompted for download rather than displayed in the browser.
+
+
 
 **Troubleshooting:**
 
-    - Files Not Showing: Ensure the `data` directory contains files and that the `server.py` script is running correctly.
-    - To start the HTTP server on port 80, ensure that no other services are using port 80 on your machine.
+
+- Files Not Showing: Ensure the `data` directory contains files and that the `server.py` script is running correctly.
+- To start the HTTP server on port 80, ensure that no other services are using port 80 on your machine.
